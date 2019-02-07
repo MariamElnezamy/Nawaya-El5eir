@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="139" id="KGk-i7-Jjw" customClass="Cell1OfHomeTableViewCell" customModule="Nawa_El5eir" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="H1" translatesAutoresizingMaskIntoConstraints="NO" id="zEZ-HV-BYD">
+                        <rect key="frame" x="10" y="10" width="130" height="118.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jsF-oZ-Dpu">
+                        <rect key="frame" x="160" y="19.5" width="150" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pls-dR-QBF">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-Zi-j3j">
+                                <rect key="frame" x="0.0" y="33" width="150" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-zR-03c">
+                                <rect key="frame" x="0.0" y="66.5" width="150" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="تفاصيل اكثر" backgroundImage="ArrCell1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="8XN-g7-eL5"/>
+                            <constraint firstAttribute="width" constant="150" id="eYV-YR-tfn"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zEZ-HV-BYD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9vQ-qJ-2rF"/>
+                    <constraint firstItem="jsF-oZ-Dpu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NPC-uL-xET"/>
+                    <constraint firstItem="jsF-oZ-Dpu" firstAttribute="leading" secondItem="zEZ-HV-BYD" secondAttribute="trailing" constant="20" id="TSx-oX-NYh"/>
+                    <constraint firstAttribute="bottom" secondItem="zEZ-HV-BYD" secondAttribute="bottom" constant="10" id="dXm-C7-hAX"/>
+                    <constraint firstItem="zEZ-HV-BYD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eVf-PQ-hEF"/>
+                    <constraint firstItem="zEZ-HV-BYD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gJU-HZ-d9b"/>
+                    <constraint firstAttribute="trailing" secondItem="jsF-oZ-Dpu" secondAttribute="trailing" constant="10" id="koC-uA-6uR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Img1" destination="zEZ-HV-BYD" id="hwU-nQ-hRW"/>
+                <outlet property="name1" destination="pls-dR-QBF" id="d9G-si-wqb"/>
+                <outlet property="price1" destination="sDi-Zi-j3j" id="W6F-vW-8MR"/>
+            </connections>
+            <point key="canvasLocation" x="105.59999999999999" y="101.19940029985008"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ArrCell1" width="236" height="67"/>
+        <image name="H1" width="491.51998901367188" height="237.1199951171875"/>
+    </resources>
+</document>
